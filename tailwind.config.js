@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
+      },
       backgroundImage: {
         main: 'url(/images/main.jpg)',
         section_second: 'url(/images/section_2.jpg)',
       },
       colors: {
         amberlike: '#E2A03F',
+      },
+      backgroundColor: {
+        'section-one': '#E3A443',
       },
     },
   },

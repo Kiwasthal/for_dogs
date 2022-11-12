@@ -1,33 +1,37 @@
 import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
-import HowWeDoIt from '../components/HowWeDoIt';
-import HowYouCanHelp from '../components/HowYouCanHelp';
 import Navbar from '../components/Navbar';
-import WhoWeAre from '../components/WhoWeAre';
+import Hero from '../components/Hero';
+import SectionOne from '../components/SectionOne';
+import SectionTwo from '../components/SectionTwo';
+import SectionThree from '../components/SectionThree';
+import SectionFour from '../components/SectionFour';
 
 export default function Home() {
   const { ref, inView } = useInView();
+  const sectionHeroRef = useRef(null);
   const sectionFirstRef = useRef(null);
   const sectionSecondRef = useRef(null);
   const sectionThirdRef = useRef(null);
   const sectionFourthRef = useRef(null);
 
   return (
-    <div className="w-screen overflow-hidden">
+    <div className="w-full">
       <Navbar
         heroInView={inView}
-        firstSectionRef={sectionFirstRef}
-        secondSectionRef={sectionSecondRef}
-        thirdSectionRef={sectionThirdRef}
+        heroRef={sectionHeroRef}
+        firstRef={sectionFirstRef}
+        secondRef={sectionSecondRef}
+        thirdRef={sectionThirdRef}
+        fourthRef={sectionFourthRef}
       />
-      <WhoWeAre passRef={sectionFirstRef} heroRef={ref} />
-      <div className="w-full  bg-amber-600 flex items-center justify-center flex-col px-0 xl:px-64">
-        <HowWeDoIt passRef={sectionSecondRef} />
-      </div>
+      <Hero passRef={sectionHeroRef} heroRef={ref} />
+      <SectionOne passRef={sectionFirstRef} />
+      <SectionTwo passRef={sectionSecondRef} />
+      <SectionThree passRef={sectionThirdRef} />
+      <SectionFour passRef={sectionFourthRef} />
+
       {/* //How you can help/ */}
-      <div className="w-full  bg-gradient-to-b from-amberlike to-amber-600 flex items-center justify-center flex-col px-0 xl:px-64">
-        <HowYouCanHelp passRef={sectionThirdRef} />
-      </div>
       {/* //The animal of the month/ */}
     </div>
   );

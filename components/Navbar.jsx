@@ -1,26 +1,23 @@
-const Navbar = ({
-  heroInView,
-  firstSectionRef,
-  secondSectionRef,
-  thirdSectionRef,
-}) => {
+const Navbar = ({ heroInView, firstRef, secondRef, thirdRef, fourthRef }) => {
   const scrollToSection = ref =>
     ref.current.scrollIntoView({
       behavior: 'smooth',
     });
   return (
     <nav className={`navbar ${heroInView ? 'text-white' : 'text-black'}`}>
-      <ul className="flex font-bold text-2xl w-full justify-between">
-        <li className="link" onClick={() => scrollToSection(firstSectionRef)}>
+      <ul className="flex font-bold  text-xs md:text-lg lg:text-2xl w-full justify-between">
+        <li className="link" onClick={() => scrollToSection(firstRef)}>
           Who we are
         </li>
-        <li className="link" onClick={() => scrollToSection(secondSectionRef)}>
+        <li className="link" onClick={() => scrollToSection(secondRef)}>
           How we do it
         </li>
-        <li className="link" onClick={() => scrollToSection(thirdSectionRef)}>
+        <li className="link" onClick={() => scrollToSection(thirdRef)}>
           How you can help
         </li>
-        <li className="link">Animal of the month</li>
+        <li className="link" onClick={() => scrollToSection(fourthRef)}>
+          Animal of the month
+        </li>
         <li className="link">Contact</li>
       </ul>
     </nav>
