@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 const SwiperCard = ({ url, name, desc, text, subtext }) => {
   return (
     <div className="w-3/4 p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
-      <div className="relative  w-3/4">
+      <div className="relative w-3/4">
         <img src={url} alt={name} />
         <h2 className="absolute text-4xl font-bold text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           {name}
@@ -15,7 +15,7 @@ const SwiperCard = ({ url, name, desc, text, subtext }) => {
         <p className="text-right  text-sm mt-2 text-yellow-500 font-bold">
           {desc}
         </p>
-        <p className="p-4 text-sm leading- text-gray-800 font-bold text-center">
+        <p className="p-4 text-[14px] leading- text-gray-800 font-bold text-center">
           {text}
         </p>
         <p className="p-4 leading-5 text-sm text-gray-800 font-bold text-center">
