@@ -6,6 +6,7 @@ import SectionOne from '../components/SectionOne';
 import SectionTwo from '../components/SectionTwo';
 import SectionThree from '../components/SectionThree';
 import SectionFour from '../components/SectionFour';
+import Contact from '../components/Contact';
 
 export default function Home() {
   const { ref, inView } = useInView();
@@ -30,7 +31,7 @@ export default function Home() {
       <SectionTwo passRef={sectionSecondRef} />
       <SectionThree passRef={sectionThirdRef} />
       {/* <SectionFour passRef={sectionFourthRef} /> */}
-
+      <Contact />
       {/* //How you can help/ */}
       {/* //The animal of the month/ */}
     </div>
