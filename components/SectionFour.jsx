@@ -2,27 +2,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-const SwiperCard = ({ url }) => {
+const SwiperCard = ({ url, name, desc, text, subtext }) => {
   return (
-    <div className="w-3/4 p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-center items-center transition-all duration-500">
-      <div className="relative">
-        <img src="/images/section_1.jpg" alt="" />
+    <div className="w-3/4 p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
+      <div className="relative  w-3/4">
+        <img src={url} alt={name} />
         <h2 className="absolute text-4xl font-bold text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          Milky
+          {name}
         </h2>
       </div>
       <div className="w-full">
         <p className="text-right  text-sm mt-2 text-yellow-500 font-bold">
-          2 years old, medium sized
+          {desc}
         </p>
-
-        <p className="p-4 text-sm leading-5 text-gray-800 font-bold text-center">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          explicabo qui ipsum ad
+        <p className="p-4 text-sm leading- text-gray-800 font-bold text-center">
+          {text}
         </p>
-
         <p className="p-4 leading-5 text-sm text-gray-800 font-bold text-center">
-          Once she trusts you she will follow you around everywhere.
+          {subtext}
         </p>
       </div>
     </div>
@@ -71,13 +68,39 @@ const SectionFour = ({ passRef }) => {
         }}
       >
         <SwiperSlide className="flex justify-center">
-          <SwiperCard />
+          <SwiperCard
+            url={'/images/swiper_1.jpg'}
+            name={'Milky'}
+            desc={'2 years old, medium sized'}
+            text={
+              "Milky loves beeing around people and having all the attention to herself and that's the reason she will be best in a home as the only pet. She enjoys  running and going to the beach as much she adores the attention."
+            }
+            subtext={
+              'Once she trusts you she will follow you around everywhere.'
+            }
+          />
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <SwiperCard />
+          <SwiperCard
+            url={'/images/swiper_2.jpg'}
+            name="Tonia"
+            desc=" 10 months old, medium sized (20 kilos)"
+            text=" Tonia is sweet, she likes to play but she is  calm and loves cuddles. She is very friendly will other dogs and very good with kids. Tonia never had a home; she was abandoned at very early age."
+            subtext={
+              " Although a bit shy at the beginning with strangers, it doesn't take long for her to trust you and come to you for cuddles and scratches."
+            }
+          />
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
-          <SwiperCard />
+          <SwiperCard
+            url={'/images/swiper_3.jpg'}
+            name="Rosie"
+            desc={'9 months, small sized will not grow over 15 kilos'}
+            text="Rosie was found with a broken leg. She got a successful surgery, she is able to walk, run and play without pain."
+            subtext={
+              ' Rosie is a shy, sensitive and sweet dog. She enjoys playing with the other dogs. She loves getting cuddles and kisses and gives many back too!'
+            }
+          />
         </SwiperSlide>
         <SwiperSlide className="flex justify-center">
           <SwiperCard />

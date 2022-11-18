@@ -30,7 +30,7 @@ export default function Home() {
       <SectionOne passRef={sectionFirstRef} />
       <SectionTwo passRef={sectionSecondRef} />
       <SectionThree passRef={sectionThirdRef} />
-      {/* <SectionFour passRef={sectionFourthRef} /> */}
+      <SectionFour passRef={sectionFourthRef} />
       <Contact />
       {/* //How you can help/ */}
       {/* //The animal of the month/ */}
