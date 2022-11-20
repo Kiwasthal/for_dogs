@@ -3,7 +3,7 @@ function SectionThree({ passRef }) {
     <div
       ref={passRef}
       className="
-                w-full h-screen md:h-[80vh] lg:h-screen px-0 gap-0 md:gap-8 lg:px-8 2xl:px-56 grid lg:grid-cols-2 border-y-2
+                w-full h-screen md:h-[80vh] lg:h-screen px-0 gap-0 md:gap-8 xl:gap-40 lg:px-8 2xl:px-56 grid lg:grid-cols-2 border-y-2
                 items-center justify-center bg-orange-300 border-black overflow-hidden
                 "
     >
