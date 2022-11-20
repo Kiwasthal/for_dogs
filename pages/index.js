@@ -15,6 +15,7 @@ export default function Home() {
   const sectionSecondRef = useRef(null);
   const sectionThirdRef = useRef(null);
   const sectionFourthRef = useRef(null);
+  const sectionContactRef = useRef(null);
 
   return (
     <div className="w-full">
@@ -25,13 +26,14 @@ export default function Home() {
         secondRef={sectionSecondRef}
         thirdRef={sectionThirdRef}
         fourthRef={sectionFourthRef}
+        contactRef={sectionContactRef}
       />
       <Hero passRef={sectionHeroRef} heroRef={ref} />
       <SectionOne passRef={sectionFirstRef} />
       <SectionTwo passRef={sectionSecondRef} />
       <SectionThree passRef={sectionThirdRef} />
       <SectionFour passRef={sectionFourthRef} />
-      <Contact />
+      <Contact passRef={sectionContactRef} />
       {/* //How you can help/ */}
       {/* //The animal of the month/ */}
     </div>

@@ -1,6 +1,7 @@
-const Contact = () => {
+const Contact = ({ passRef }) => {
   return (
     <section
+      ref={passRef}
       className="w-full h-screen lg:h-[80vh]  px-0 gap-0 md:gap-8  xl:gap-12 lg:px-8 2xl:px-56 flex flex-col border-y-2
   items-start justify-center bg-white border-black overflow-hidden relative"
     >

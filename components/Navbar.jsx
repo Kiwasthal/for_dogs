@@ -1,4 +1,11 @@
-const Navbar = ({ heroInView, firstRef, secondRef, thirdRef, fourthRef }) => {
+const Navbar = ({
+  heroInView,
+  firstRef,
+  secondRef,
+  thirdRef,
+  fourthRef,
+  contactRef,
+}) => {
   const scrollToSection = ref =>
     ref.current.scrollIntoView({
       behavior: 'smooth',
@@ -18,7 +25,9 @@ const Navbar = ({ heroInView, firstRef, secondRef, thirdRef, fourthRef }) => {
         <li className="link" onClick={() => scrollToSection(fourthRef)}>
           Animal of the month
         </li>
-        <li className="link">Contact</li>
+        <li className="link" onClick={() => scrollToSection(contactRef)}>
+          Contact
+        </li>
       </ul>
     </nav>
   );

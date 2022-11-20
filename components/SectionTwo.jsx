@@ -16,8 +16,8 @@ function SectionTwo({ passRef }) {
         ></img>
       </div>
       <div className="md:w-3/4 justify-self-center lg:w-full text-black  flex  flex-col items-center lg:items-start text-2xl lg:text-5xl justify-start gap-3">
-        <p className="text-5xl lg:text-5xl">How we do it</p>
-        <p className="text-lg  lg:text-2xl text-center  lg:text-left">
+        <p className="text-5xl lg:text-7xl font-bold">How we do it</p>
+        <p className="text-lg  lg:text-2xl text-center  lg:text-justify font-thin">
           Anyway, we can. We tell the story of our strays. We put posters in our
           schools, we work with our teachers to include our dogs in the school
           newsletters, we use our social media to reach out and most of all we
