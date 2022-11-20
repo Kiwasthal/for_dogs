@@ -39,7 +39,7 @@ const SectionFour = ({ passRef }) => {
         modules={[Navigation]}
         className="w-full "
         spaceBetween={5}
-        slidesPerView={1}
+        slidesPerView="auto"
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
