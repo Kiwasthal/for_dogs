@@ -7,7 +7,7 @@ function SectionTwo({ passRef }) {
       className="
                 w-full h-[80vh] lg:h-screen px-0 gap-0 md:gap-8 lg:px-8 2xl:px-56 grid lg:grid-cols-2 border-y-2
                 items-center justify-center bg-yellow-200 border-black overflow-hidden
-                "
+              "
     >
       <div className="w-3/4 justify-self-center lg:w-full shadow-2xl overflow-hidden">
         <img
