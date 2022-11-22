@@ -9,13 +9,13 @@ function SectionTwo({ passRef }) {
                 items-center justify-center bg-yellow-200 border-black overflow-hidden
               "
     >
-      <div className="w-full self-start md:self-auto md:w-3/4 justify-self-center lg:w-full shadow-2xl overflow-hidden">
+      <div className="w-full self-start md:self-auto md:w-3/4 justify-self-center lg:w-full shadow-2xl overflow-hidden lg:col-start-1">
         <img
           src="/images/section_2.jpg"
           className="hover:scale-125  transition-all duration-300 "
         ></img>
       </div>
-      <div className="row-start-1  md:w-3/4 justify-self-center lg:w-full text-black  flex  flex-col items-center lg:items-start text-2xl lg:text-5xl justify-start gap-3">
+      <div className="row-start-1  md:w-3/4 justify-self-center lg:w-full text-black  flex  flex-col items-center lg:items-start text-2xl lg:text-5xl justify-start gap-3 lg:col-start-2">
         <p className=" text-2xl md:text-5xl lg:text-6xl font-bold">
           How we do it
         </p>
