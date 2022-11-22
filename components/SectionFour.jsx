@@ -18,7 +18,7 @@ const SwiperCard = ({ url, name, desc, text, subtext }) => {
         <p className="p-0 text-[10px] md:p-4 md:text-[14px] text-gray-800 font-bold text-center">
           {text}
         </p>
-        <p className="p-1 md:p-4 text-[10px] leading-3 md:leading-5 text-sm text-gray-800 font-bold text-center">
+        <p className="p-1 md:p-4 text-[10px] leading-3 md:leading-4 text-sm md:text-[0.6rem]  text-gray-800 font-bold text-center">
           {subtext}
         </p>
       </div>
