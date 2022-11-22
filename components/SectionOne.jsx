@@ -54,7 +54,7 @@ function SectionOne({ passRef }) {
           </a>
         </div>
       </div>
-      <div className="w-2/3 md:w-2/4 justify-self-center lg:w-full shadow-2xl overflow-hidden col-start-1 lg:col-start-2  row-start-4 row-span-2 md:row-span-3 self-center">
+      <div className="w-full md:w-2/4 justify-self-center lg:w-full shadow-2xl overflow-hidden col-start-1 lg:col-start-2  row-start-4 row-span-2 md:row-span-3 self-center">
         <Image
           src="/images/section_1.jpg"
           className="hover:scale-125  transition-all duration-300"
