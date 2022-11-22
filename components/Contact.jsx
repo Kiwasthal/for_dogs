@@ -5,16 +5,16 @@ const Contact = ({ passRef }) => {
       className="w-full h-screen lg:h-[80vh]  px-4 gap-0 md:gap-8  xl:gap-12 lg:px-8 2xl:px-56 flex flex-col border-y-2
     items-center md:items-start justify-center bg-white border-black overflow-hidden relative"
     >
-      <h1 className=" text-orange-400 text-2xl text-center font-extrabold md:text-5xl">
+      <h1 className="mb-8 md:mb-0 text-orange-400 text-2xl text-center font-extrabold md:text-5xl">
         Contact Us
       </h1>
       <div className="flex w-full  text-orange-400 gap-4 lg:gap-32 items-start flex-col lg:flex-row ">
         <p className="text-justify text-sm md:text-xl w-full lg:w-1/3">
-          As we are students and we have a lot of school work -plus a lot work
-          for the kids for Strays 😉 please send us an email and we will resond.
-          For adopting you need to be calling in the phone we give every time. A
-          volunteer or an associate of the NGO will reply and will match the
-          stray dog or cat and your need.
+          Send us an email only if you want to be involved and initiate the
+          activity in your school. For adoptions, please directly contact the
+          mobile number we indicate for each dog. A volunteer or an associate of
+          the NGO who host the dog will reply and make all arrangements for the
+          adoption.
         </p>
         <div className="w-full lg:w-2/5">
           <form action="#">

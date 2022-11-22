@@ -19,7 +19,7 @@ export default function Home() {
   const [isClicked, setIsClicked] = useState(false);
   const toggleClicked = () => setIsClicked(!isClicked);
 
-  const customClass = !isClicked ? 'translate-x-52' : 'translate-x-0';
+  const customClass = !isClicked ? 'translate-x-96' : 'translate-x-0';
 
   return (
     <div className="w-full">

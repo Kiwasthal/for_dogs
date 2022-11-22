@@ -5,23 +5,22 @@ function SectionOne({ passRef }) {
     <div
       ref={passRef}
       className="
-                w-full h-screen px-4  gap-0 md:gap-8  lg:gap-14 xl:gap-40 lg:px-8 2xl:px-56 grid lg:grid-cols-2 border-y-2
-                items-center justify-center bg-section-one border-black overflow-hidden
+                w-full h-screen px-4  gap-0 md:gap-8  lg:gap-x-32 lg:px-8 2xl:px-56 grid grid-rows-7  lg:grid-rows-3 lg:grid-cols-2 border-y-2
+                 bg-section-one border-black overflow-hidden
                 "
     >
-      <div className="md:w-3/4 justify-self-center lg:w-full text-black  flex  flex-col items-center lg:items-start text-2xl lg:text-5xl justify-start md:gap-3">
-        <p className="text-2xl md:text-5xl lg:text-7xl font-bold mb-3">
-          Who we are
-        </p>
-        <p className="text-sm  lg:text-2xl text-justify   font-thin ">
-          We are kids and teenagers who work with stray animals protection NGOs
-          and try to find in our schools families who would like to adopt a
-          stray animal and change theirs and the animal life. The initiative was
-          founded by Ines Saltiel -a student of Campion School in Greece. The
-          initiative had its roots in a campaign for stray animals started in
-          2018
-        </p>
-        <p className="text-lg md:text-2xl font-bold mt-2 md:mt-5 ">
+      <p className="text-2xl self-center justify-self-center md:text-5xl lg:text-7xl font-bold mb-3 row-start-1 md:row-start-1 md:col-start-1 md:self-end md:justify-self-start">
+        Who we are
+      </p>
+      <p className="text-sm  lg:text-2xl text-justify col-start-1   font-thin row-start-2 row-span-2 md:row-start-2 md:row-span-1 self-center">
+        We are kids and teenagers who work with stray animals protection NGOs
+        and try to find in our schools families who would like to adopt a stray
+        animal and change theirs and the animal life. The initiative was founded
+        by Ines Saltiel -a student of Campion School in Greece. The initiative
+        had its roots in a campaign for stray animals started in 2018
+      </p>
+      <div className="row-start-6  row-span-2  self-start md:row-start-3">
+        <p className="text-lg md:text-2xl font-bold mt-2 md:mt-5 text-center self-end">
           OUR PARTNERS
         </p>
         <div className="w-full mt-0 md:mt-5 flex justify-between gap-3 md:gap-0 items-center p-4 md:p-0">
@@ -55,7 +54,7 @@ function SectionOne({ passRef }) {
           </a>
         </div>
       </div>
-      <div className="w-2/3 md:w-2/4 justify-self-center lg:w-full shadow-2xl overflow-hidden ">
+      <div className="w-2/3 md:w-2/4 justify-self-center lg:w-full shadow-2xl overflow-hidden col-start-1 md:col-start-2  row-start-4 row-span-2 md:row-span-3 self-center">
         <Image
           src="/images/section_1.jpg"
           className="hover:scale-125  transition-all duration-300"
