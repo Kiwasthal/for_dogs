@@ -2,10 +2,12 @@ const Contact = ({ passRef }) => {
   return (
     <section
       ref={passRef}
-      className="w-full h-screen lg:h-[80vh]  px-0 gap-0 md:gap-8  xl:gap-12 lg:px-8 2xl:px-56 flex flex-col border-y-2
-  items-start justify-center bg-white border-black overflow-hidden relative"
+      className="w-full h-screen lg:h-[80vh]  px-4 gap-0 md:gap-8  xl:gap-12 lg:px-8 2xl:px-56 flex flex-col border-y-2
+    items-center md:items-start justify-center bg-white border-black overflow-hidden relative"
     >
-      <h1 className=" text-orange-400 font-extrabold text-5xl">Contact Us</h1>
+      <h1 className=" text-orange-400 text-2xl text-center font-extrabold md:text-5xl">
+        Contact Us
+      </h1>
       <div className="flex w-full  text-orange-400 gap-4 lg:gap-32 items-start flex-col lg:flex-row ">
         <p className="text-justify text-sm md:text-xl w-full lg:w-1/3">
           As we are students and we have a lot of school work -plus a lot work

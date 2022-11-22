@@ -7,7 +7,7 @@ function Hero({ passRef, heroRef }) {
       ref={passRef}
     >
       <div
-        className="w-full ml-8 lg:ml-24 xl:ml-56 font-bold  text-7xl md:text-8xl lg:text-9xl text-white"
+        className="w-full ml-8 lg:ml-24 xl:ml-56 font-bold text-6xl  sm:text-7xl md:text-8xl lg:text-9xl text-white"
         ref={heroRef}
       >
         <p className=" ">STAY </p>
