@@ -13,11 +13,11 @@ function SectionOne({ passRef }) {
         Who we are
       </p>
       <p className="text-sm md:text-xl lg:text-2xl text-justify col-start-1   font-thin row-start-2 row-span-2 lg:row-start-2 lg:row-span-1 self-center">
-        We are kids and teenagers who work with stray animals protection NGOs
-        and try to find in our schools families who would like to adopt a stray
-        animal and change theirs and the animal life. The initiative was founded
-        by Ines Saltiel -a student of Campion School in Greece. The initiative
-        had its roots in a campaign for stray animals started in 2018
+        We are kids and teenagers who work with stray animal protection NGOs. We
+        try to find in our schools families who would like to adopt a stray
+        animal and change theirs and the animal’s life. The initiative was
+        founded by Ines Saltiel -a student of Campion School in Greece. The
+        initiative had its roots in a campaign for stray animals started in 2018
       </p>
       <div className="row-start-6  row-span-2  self-start lg:row-start-3">
         <p className="text-lg md:text-2xl font-bold mt-2 md:mt-5 text-center self-end">

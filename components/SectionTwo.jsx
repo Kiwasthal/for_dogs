@@ -20,10 +20,10 @@ function SectionTwo({ passRef }) {
           How we do it
         </p>
         <p className="text-sm  lg:text-2xl text-justify font-thin">
-          Anyway, we can. We tell the story of our strays. We put posters in our
+          Anyway we can, we tell the story of our strays. We put posters in our
           schools, we work with our teachers to include our dogs in the school
           newsletters, we use our social media to reach out and most of all we
-          speak to our fellow students and explain the benefits of adoption a
+          speak to our fellow students and explain the benefits of adopting a
           stray.
         </p>
       </div>

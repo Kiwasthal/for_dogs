@@ -12,10 +12,10 @@ function SectionThree({ passRef }) {
           How you can Help
         </p>
         <p className="text-sm  lg:text-2xl text-justify font-thin">
-          If you are a student in Europe join us. Through the NGOs we work we
-          may send the stray animal anywhere in Europe after they do of course
+          If you are a student in Europe join us. Through the NGOs we work, we
+          may send the stray animal anywhere in Europe after they do, of course,
           the proper checking. We will be sending you every month the
-          information of one dog. If that dog is adopted the NGOs will direct
+          information of one dog. If that dog is adopted, the NGOs will direct
           the interested family to another one.
         </p>
       </div>
