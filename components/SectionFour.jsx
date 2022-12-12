@@ -6,13 +6,13 @@ const SwiperCard = ({ url, name, desc, text, subtext }) => {
   return (
     <div className="w-4/5  md:w-3/4 p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
       <div className="relative w-full md:w-3/4">
-        <img src={url} alt={name} />
+        <img className="w-full  h-80 sm:h-56 xl:h-96" src={url} alt={name} />
         <h2 className="absolute text-4xl font-bold text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           {name}
         </h2>
       </div>
-      <div className="w-full">
-        <p className="text-right text-[10px] md:text-sm mt-2 text-yellow-500 font-bold">
+      <div className="w-full items-center flex flex-col">
+        <p className="text-center text-[10px] md:text-sm mt-2 text-yellow-500 font-bold w-2/3">
           {desc}
         </p>
         <p className="p-0 text-[10px] md:p-4 md:text-[14px] text-gray-800 font-bold text-center">
@@ -60,10 +60,10 @@ const SectionFour = ({ passRef }) => {
             spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
           },
           1240: {
-            slidesPerView: 4,
+            slidesPerView: 3,
           },
         }}
       >
@@ -102,9 +102,7 @@ const SectionFour = ({ passRef }) => {
             }
           />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center">
-          <SwiperCard />
-        </SwiperSlide>
+
         <div className="swiper-button-prev "></div>
         <div className="swiper-button-next"></div>
       </Swiper>

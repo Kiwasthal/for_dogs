@@ -8,10 +8,10 @@ function Hero({ passRef, heroRef }) {
     >
       <h1
         className="
-          ml-6 sm:ml-12 xl:ml-32 mt-12 md:mt-40 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white"
+          ml-6 sm:ml-12 xl:ml-20 mt-28 md:mt-60 font-bold text-lg sm:text-3xl md:text-4xl lg:text-7xl tracking-widest text-white"
         ref={heroRef}
       >
-        STAY FOR STRAYS BY TEENS
+        STAY FOR STRAYS <span className="text-amber-400"> BY TEENS</span>
       </h1>
       <span className="h-2 w-full"></span>
     </div>

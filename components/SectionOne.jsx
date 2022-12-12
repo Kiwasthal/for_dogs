@@ -45,8 +45,8 @@ function SectionOne({ passRef }) {
             className="w-2/3 h-full md:w-1/2"
           >
             <Image
-              className="w-full"
-              src={'/images/navarino_pet_community.jpg'}
+              className="w-ful"
+              src={'/images/navarino_pet_community.png'}
               alt="dogs voice logo && hyperlink"
               width={300}
               height={100}
