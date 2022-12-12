@@ -4,9 +4,9 @@ import 'swiper/swiper-bundle.css';
 
 const SwiperCard = ({ url, name, desc, text, subtext }) => {
   return (
-    <div className="w-4/5  md:w-3/4 p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
+    <div className="w-4/5  md:w-3/4  p-4 flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
       <div className="relative w-full md:w-3/4">
-        <img className="w-full  h-80 sm:h-56 xl:h-96" src={url} alt={name} />
+        <img className="w-full  h-80 sm:h-56 xl:h-80" src={url} alt={name} />
         <h2 className="absolute text-4xl font-bold text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           {name}
         </h2>
