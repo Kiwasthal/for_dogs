@@ -4,24 +4,23 @@ import 'swiper/swiper-bundle.css';
 
 const SwiperCard = ({ url, name, desc, text, subtext }) => {
   return (
-    <div className="w-4/5  md:w-3/4  p-2  flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-start items-center transition-all duration-500">
+    <div className="w-4/5  md:w-3/4  p-2 h-[700px] flex flex-col bg-gray-50 shadow-xl hover:shadow-2xl justify-evenly items-center transition-all duration-500">
       <div className="relative w-full md:w-3/4">
         <img className="w-full  h-80 sm:h-56 xl:h-80" src={url} alt={name} />
         <h2 className="absolute text-4xl font-bold text-white top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           {name}
         </h2>
       </div>
-      <div className="w-full items-center flex flex-col">
-        <p className="text-center text-[10px] md:text-sm mt-2 text-yellow-500 font-bold w-2/3">
-          {desc}
-        </p>
-        <p className="p-0 text-[10px] md:p-4 md:text-[14px] text-gray-800 font-bold text-center">
-          {text}
-        </p>
-        <p className="p-1 md:p-4 text-[10px] leading-3 md:leading-4 text-sm md:text-[0.6rem]  text-gray-800 font-bold text-center">
-          {subtext}
-        </p>
-      </div>
+
+      <p className="text-center text-[10px] md:text-sm mt-2 text-yellow-500 font-bold w-2/3">
+        {desc}
+      </p>
+      <p className="p-0 text-[10px] md:p-2 md:text-[14px] text-gray-800 font-bold text-center">
+        {text}
+      </p>
+      <p className="p-1 md:p-2 text-[10px] leading-3 md:leading-4 text-sm md:text-[0.6rem]  text-gray-800 font-bold text-center">
+        {subtext}
+      </p>
     </div>
   );
 };
@@ -29,12 +28,9 @@ const SwiperCard = ({ url, name, desc, text, subtext }) => {
 const SectionFour = ({ passRef }) => {
   return (
     <div
-      className="w-full bg-yellow-400 h-screen flex flex-col px-4 md:px-12 pt-12 gap-4 md:gap-8 border-y-2 border-black"
+      className="w-full bg-yellow-400 h-auto flex flex-col px-4 md:px-12 pt-12  border-b-2 border-black"
       ref={passRef}
     >
-      <h1 className="text-2xl text-center font-extrabold md:text-7xl text-white">
-        Adopt a pet today!
-      </h1>
       <Swiper
         modules={[Navigation]}
         className="w-full "
@@ -67,7 +63,7 @@ const SectionFour = ({ passRef }) => {
           },
         }}
       >
-        <SwiperSlide className="grid justify-items-center">
+        <SwiperSlide className="grid justify-items-center pb-4">
           <SwiperCard
             url={'/images/swiper_1.jpg'}
             name={'Milky'}

@@ -97,6 +97,9 @@ export default function Home() {
       <SectionOne passRef={sectionFirstRef} />
       <SectionTwo passRef={sectionSecondRef} />
       <SectionThree passRef={sectionThirdRef} />
+      <h2 className="w-full text-white text-center text-7xl bg-yellow-400 border-black border-t-2 py-4">
+        Adopt a pet
+      </h2>
       <SectionFour passRef={sectionFourthRef} />
       <Contact passRef={sectionContactRef} />
       {/* //How you can help/ */}
